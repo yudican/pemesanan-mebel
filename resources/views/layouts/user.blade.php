@@ -125,11 +125,11 @@
                   </a>
                 </li>
                 @endif
-                <li class="nav-item mr-4 ">
+                {{-- <li class="nav-item mr-4 ">
                   <a class="nav-link" href="{{route('user.panduan')}}">
                     <span>Panduan</span>
                   </a>
-                </li>
+                </li> --}}
 
 
 
@@ -252,7 +252,7 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright ml-auto">
-          {{date('Y')}}, made with <i class="fa fa-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
+          <span>Toko Mebel Nasrul</span>
         </div>
       </div>
     </footer>
