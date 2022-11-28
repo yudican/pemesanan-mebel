@@ -93,8 +93,7 @@
     <div class="main-header" data-background-color="purple">
       <div class="nav-top">
         <div class="container d-flex flex-row">
-          <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
-            data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
               <i class="icon-menu"></i>
             </span>
@@ -102,8 +101,7 @@
           {{-- <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button> --}}
           <!-- Logo Header -->
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="{{asset('assets/img/logo-admin.svg')}}" alt="navbar brand" class="navbar-brand"
-              style="height: 30px;">
+            <span class="text-white"><b>Toko Mebel</b></span>
           </a>
           <!-- End Logo Header -->
 
@@ -144,12 +142,10 @@
                   </a>
                   <ul class="dropdown-menu dropdown-user animated fadeIn">
                     <div class="scroll-wrapper dropdown-user-scroll scrollbar-outer" style="position: relative;">
-                      <div class="dropdown-user-scroll scrollbar-outer scroll-content"
-                        style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                      <div class="dropdown-user-scroll scrollbar-outer scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
                         <li>
                           <div class="user-box">
-                            <div class="avatar-lg"><img src="{{auth()->user()->profile_photo_url}}" alt="image profile"
-                                class="avatar-img rounded"></div>
+                            <div class="avatar-lg"><img src="{{auth()->user()->profile_photo_url}}" alt="image profile" class="avatar-img rounded"></div>
                             <div class="u-text">
                               <h4>{{auth()->user()->name}}</h4>
                             </div>
@@ -162,8 +158,7 @@
                           <div class="dropdown-divider"></div>
                           <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <a class="dropdown-item" id="notifDropdown" title="Logout" href="{{ route('logout') }}"
-                              onclick="event.preventDefault();
+                            <a class="dropdown-item" id="notifDropdown" title="Logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                                                                     this.closest('form').submit();">
                               <i class="fas fa-sign-out-alt pr-3"></i>
                               <span class="menu-title">Logout</span>
@@ -257,8 +252,7 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright ml-auto">
-          {{date('Y')}}, made with <i class="fa fa-heart heart text-danger"></i> by <a
-            href="http://www.themekita.com">ThemeKita</a>
+          {{date('Y')}}, made with <i class="fa fa-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
         </div>
       </div>
     </footer>
