@@ -1,0 +1,1 @@
+<button class="btn btn-{{$type}} btn-sm">{{$label}}</button>
