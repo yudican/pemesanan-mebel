@@ -125,11 +125,11 @@
                   </a>
                 </li>
                 @endif
-                {{-- <li class="nav-item mr-4 ">
+                <li class="nav-item mr-4 ">
                   <a class="nav-link" href="{{route('user.panduan')}}">
                     <span>Panduan</span>
                   </a>
-                </li> --}}
+                </li>
 
 
 
