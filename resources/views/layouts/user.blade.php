@@ -235,6 +235,12 @@
               </a>
             </li>
             <li class="nav-item active">
+              <a class="nav-link" href="{{route('update-profile')}}">
+                <i class="fas fa-user pr-3"></i>
+                <span class="menu-title">Update Profile</span>
+              </a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="{{route('logout')}}">
                 <i class="fas fa-sign-out-alt pr-3"></i>
                 <span class="menu-title">Logout</span>
