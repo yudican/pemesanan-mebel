@@ -8,6 +8,8 @@ use App\Http\Livewire\Client\Panduan;
 use App\Http\Livewire\Client\PanduanAdmin;
 use App\Http\Livewire\Client\ProductDetail;
 use App\Http\Livewire\Client\ShoppingCart;
+use App\Http\Livewire\ClientPage\DaftarTransaksi;
+use App\Http\Livewire\ClientPage\UpdateProfile as ClientPageUpdateProfile;
 use App\Http\Livewire\CrudGenerator;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Master\BannerController;
@@ -72,4 +74,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'user.authorization']
     Route::get('/checkout/{order_id?}', Checkout::class)->name('checkout');
     Route::get('/selesaikan-pesanan/{order_id}', CheckoutPayment::class)->name('checkout.payment');
     Route::get('panduan-admin', PanduanAdmin::class)->name('admin.panduan');
+
+
+    Route::get('profile', ClientPageUpdateProfile::class)->name('client.profile');
+    Route::get('daftar-transaksi', DaftarTransaksi::class)->name('client.daftar-transaksi');
 });

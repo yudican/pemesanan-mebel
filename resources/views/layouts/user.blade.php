@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="{{asset('assets/css/atlantis2.css')}}">
 
   <!-- Styles -->
-  {{--
-  <link rel="stylesheet" href="{{ mix('css/app.css') }}"> --}}
+
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   @stack('styles')
   @livewireStyles
   <style>
@@ -100,7 +100,7 @@
           </button>
           {{-- <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button> --}}
           <!-- Logo Header -->
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{{route('home.user')}}" class="logo d-flex align-items-center">
             <span class="text-white"><b>Toko Mebel</b></span>
           </a>
           <!-- End Logo Header -->
@@ -153,8 +153,8 @@
                         </li>
                         <li>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Profile</a>
-                          <a class="dropdown-item" href="{{route('order')}}">Transaksi Saya</a>
+                          <a class="dropdown-item" href="{{route('client.profile')}}">Profile</a>
+                          <a class="dropdown-item" href="{{route('client.daftar-transaksi')}}">Transaksi Saya</a>
                           <div class="dropdown-divider"></div>
                           <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -217,7 +217,7 @@
             </li>
             @else
             <li class="nav-item active">
-              <a class="nav-link" href="{{route('order')}}">
+              <a class="nav-link" href="{{route('client.daftar-transaksi')}}">
                 <i class="fas fa-file-invoice-dollar pr-3"></i>
                 <span class="menu-title">Daftar Transaksi</span>
               </a>
@@ -235,7 +235,7 @@
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{route('update-profile')}}">
+              <a class="nav-link" href="{{route('client.profile')}}">
                 <i class="fas fa-user pr-3"></i>
                 <span class="menu-title">Update Profile</span>
               </a>

@@ -23,9 +23,9 @@ class UpdateProfile extends Component
         $this->user_profile_photo = $user->profile_photo_path;
         $this->user_profile_photo_path = $user->profile_photo_path;
         $this->email = $user->email;
-        $this->nomor_hp = $user->profileUser->nomor_hp;
-        $this->alamat = $user->profileUser->alamat;
-        $this->ongkir_id = $user->profileUser->ongkir_id;
+        $this->nomor_hp = $user->profileUser?->nomor_hp;
+        $this->alamat = $user->profileUser?->alamat;
+        $this->ongkir_id = $user->profileUser?->ongkir_id;
     }
     public function render()
     {
